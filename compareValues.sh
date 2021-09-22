@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "----Build stage OCI_STAGE_ID-----" >> output.txt
+echo "----Build stage OCI_STAGE_ID----" >> output.txt
 echo $OCI_STAGE_ID >> output.txt
 
 echo "-----OCI_PIPELINE_ID-----" >> output.txt
