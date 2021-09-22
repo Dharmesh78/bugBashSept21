@@ -10,7 +10,6 @@ echo "------Build run id-----" >> output.txt
 echo $OCI_BUILD_RUN_ID >> output.txt
 
 
-echo "for checking trigger events" >> output.txt
 echo "----trigger source branch name---" >> output.txt
 echo $OCI_TRIGGER_SOURCE_BRANCH_NAME>> output.txt
 
