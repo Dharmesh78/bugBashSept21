@@ -20,7 +20,7 @@ echo $OCI_TRIGGER_COMMIT_HASH >> output.txt
 echo "----trigger source commit hash---" >> output.txt
 echo $OCI_TRIGGER_COMMIT_HASH >> output.txt
 
-echo "---trigger source url---" >> output.txt
+echo "---trigger source url----" >> output.txt
 echo $OCI_TRIGGER_SOURCE_URL >> output.txt
 
 
