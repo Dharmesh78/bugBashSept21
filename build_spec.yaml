@@ -1,0 +1,22 @@
+version: 0.1
+component: build
+timeoutInSeconds: 20000
+runAs: root
+shell: bash
+steps:
+
+  - type: Command
+    timeoutInSeconds: 10000
+    name: "Predefined system variables"
+    command: |
+      bash compareValues.sh
+    onFailure:
+      - type: Command
+        command: |
+          echo "variable printing failed"
+        timeoutInSeconds: 1000
+        runAs: root
+outputArtifacts:
+  - name: output
+    type: BINARY
+    location: output.txt
